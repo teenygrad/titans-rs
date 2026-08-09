@@ -21,6 +21,10 @@ cargo doc --open          # Build and open docs locally
 
 The library is a single crate (`src/lib.rs` as the root). As modules are added, they should be declared here and organized under `src/` as either inline modules or separate files.
 
+## Release process
+
+Version bumps are driven by `release-plz` (`release-plz.toml`, `.github/workflows/release-plz.yml`). A push to `main` runs it directly — on a version bump with no prior release, it publishes to crates.io immediately rather than waiting on a PR merge, so bump `Cargo.toml`'s `version` deliberately.
+
 ## Coding standards
 
 ### Ownership & borrowing
