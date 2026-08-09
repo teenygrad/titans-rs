@@ -1,0 +1,16 @@
+[package]
+name = "titans-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Rust implementation of Titans: Learning to Memorize at Test Time"
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/teenygrad/titans-rs"
+homepage = "https://github.com/teenygrad/titans-rs"
+documentation = "https://docs.rs/titans-rs"
+keywords = ["machine-learning", "transformers", "long-context", "memory", "titans"]
+categories = ["science", "algorithms"]
+rust-version = "1.85"
+include = ["src/**", "README.md", "LICENSE", "Cargo.toml"]
+
+[dependencies]
